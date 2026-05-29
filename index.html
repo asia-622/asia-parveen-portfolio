@@ -3,277 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asia Parveen | BS Mathematics</title>
+    <title>Asia Parveen | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <!-- Icons -->
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Sticky Navbar -->
-    <nav id="navbar">
-        <div class="logo">Asia.Parveen</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#journey">Journey</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Asia<span>Parveen</span>.</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home">
-        <div class="hero-content">
-            <p class=" greeting">Hello, my name is</p>
-            <h1 class="hero-name">Asia Parveen</h1>
-            <h2 class="hero-subtitle">I build things with <span id="typing-text"></span></h2>
-            <p class="hero-desc">
-                Final semester <strong>BS Mathematics</strong> student at University of Karachi. 
-                Passionate about Artificial Intelligence, Data Science, and algorithmic problem solving.
-                Currently maintaining a <strong>CGPA of 3.57</strong>.
-            </p>
-            <div class="hero-btns">
-                <a href="#achievements" class="btn btn-primary">View Achievements</a>
-                <a href="#gallery" class="btn btn-outline">View Gallery</a>
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h3>Hello, I'm</h3>
+                <h1>Asia Parveen</h1>
+                <h2 class="typed-text">AI & Python Enthusiast | Future Data Scientist</h2>
+                <p>BS Mathematics (Final Semester) | CGPA: 3.57</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <!-- Links Added Here -->
+                    <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
             </div>
-        </div>
-        <div class="hero-visual">
-            <!-- Placeholder for Profile Image - REPLACE 'profile.jpg' with actual file -->
-            <div class="img-container">
-                <img src="images/profile.jpg" alt="Asia Parveen" onerror="this.src='https://via.placeholder.com/400x400/0a192f/64ffda?text=Profile+Photo'">
-                <div class="glow"></div>
+            <div class="hero-image">
+                <!-- Uses correct image path. CSS fallback handles missing files. -->
+                <img src="images/profile.jpg" alt="Asia Parveen" onerror="this.src='https://via.placeholder.com/400x400/112240/64FFDA?text=Asia+Parveen'">
+                <div class="glow-hover"></div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <div class="section-header">
-            <h2>About Me</h2>
-            <div class="line"></div>
-        </div>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>
-                    I am a dedicated Mathematics student with a keen interest in applying theoretical concepts to real-world technology.
-                    My academic journey has equipped me with strong analytical skills, particularly in <strong>Python programming</strong> and 
-                    <strong>Machine Learning</strong>.
-                </p>
-                <p>
-                    Here are my core technical skills:
-                </p>
-                <ul class="skills-list">
-                    <li><i class="fab fa-python"></i> Python</li>
-                    <li><i class="fas fa-brain"></i> AI / ML</li>
-                    <li><i class="fas fa-calculator"></i> Data Analysis</li>
-                    <li><i class="fas fa-code"></i> C++</li>
-                    <li><i class="fas fa-database"></i> SQL</li>
-                </ul>
-            </div>
-            <div class="stat-card">
-                <h3>Academic Standing</h3>
-                <div class="cgpa-box">
-                    <span class="label">Current CGPA</span>
-                    <span class="value">3.57</span>
-                    <span class="scale">/ 4.0</span>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a Final Semester student at <strong>COMSATS University</strong> pursuing a BS in Mathematics. With a strong CGPA of 3.57, I have a keen interest in applying mathematical concepts to real-world problems through Technology.</p>
+                    <p>My passion lies in Artificial Intelligence, Data Science, and Python Development. I am constantly learning new algorithms andstatistical models to bridge the gap between theoretical mathematics and practical AI solutions.</p>
+                </div>
+                <div class="stats-box">
+                    <div class="stat-item">
+                        <h3>3.57</h3>
+                        <p>Current CGPA</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Final</h3>
+                        <p>Semester</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- My Journey Section -->
-    <section id="journey">
-        <div class="section-header">
-            <h2>My Journey</h2>
-            <div class="line"></div>
-        </div>
-        <div class="timeline">
-            <!-- Timeline Item 1 -->
-            <div class="timeline-item left">
-                <div class="content">
-                    <h3>School Level</h3>
-                    <p>Silver Medalist</p>
-                    <span class="date">2018 - 2020</span>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Data Analysis, Automation, Scripting</p>
                 </div>
-            </div>
-            <!-- Timeline Item 2 -->
-            <div class="timeline-item right">
-                <div class="content">
-                    <h3>University (5th Sem)</h3>
-                    <p>3rd Position Holder</p>
-                    <span class="date">Academic Year 2022</span>
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Scikit-Learn, TensorFlow Basics</p>
                 </div>
-            </div>
-            <!-- Timeline Item 3 -->
-            <div class="timeline-item left">
-                <div class="content">
-                    <h3>University (7th Sem)</h3>
-                    <p>1st Position Holder (Current)</p>
-                    <span class="date">Academic Year 2024</span>
+                <div class="skill-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Science</h3>
+                    <p>Pandas, NumPy, Visualization</p>
                 </div>
-            </div>
-            <!-- Timeline Item 4 -->
-            <div class="timeline-item right">
-                <div class="content">
-                    <h3>Extracurricular</h3>
-                    <p>Vice President Shield</p>
-                    <span class="date">University Club</span>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>C++ & SQL</h3>
+                    <p>Programming & Database</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Achievements Section (Cards) -->
-    <section id="achievements">
-        <div class="section-header">
-            <h2>Academic Achievements</h2>
-            <div class="line"></div>
-        </div>
-        <div class="cards-container">
-            
-            <!-- Card 1 -->
-            <div class="glass-card gold">
-                <div class="icon-box"><i class="fas fa-trophy"></i></div>
-                <h3>1st Position (Gold)</h3>
-                <p class="sem">7th Semester</p>
-                <p class="desc">Secured 1st rank in BS Mathematics for the 7th semester examinations.</p>
-                <span class="year">2024</span>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Featured Project -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="images/fyp.jpg" alt="Final Year Project" onerror="this.style.background='#112240'">
+                    </div>
+                    <div class="project-info">
+                        <span class="tag">Featured</span>
+                        <h3>Final Year Project</h3>
+                        <p>An in-depth study on AI modeling using advanced mathematical constructs.</p>
+                        <a href="#" class="btn-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="img-placeholder">Project 2</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Analysis Project</h3>
+                        <p>Python based statistical analysis of large datasets.</p>
+                    </div>
+                </div>
             </div>
-
-            <!-- Card 2 -->
-            <div class="glass-card bronze">
-                <div class="icon-box"><i class="fas fa-medal"></i></div>
-                <h3>3rd Position (Bronze)</h3>
-                <p class="sem">5th Semester</p>
-                <p class="desc">Secured 3rd rank in BS Mathematics for the 5th semester.</p>
-                <span class="year">2022</span>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="glass-card silver">
-                <div class="icon-box"><i class="fas fa-graduation-cap"></i></div>
-                <h3>Silver Medalist</h3>
-                <p class="sem">School Level</p>
-                <p class="desc">Awarded Silver Medal for excellence in Secondary School Certificate.</p>
-                <span class="year">2018-2020</span>
-            </div>
-
-             <!-- Card 4 -->
-             <div class="glass-card blue">
-                <div class="icon-box"><i class="fas fa-user-tie"></i></div>
-                <h3>Vice President</h3>
-                <p class="sem">University Club</p>
-                <p class="desc">Led the organizing committee for the Annual Science Gala.</p>
-                <span class="year">2023</span>
-            </div>
-
         </div>
     </section>
 
-    <!-- Gallery Section (Visual Proof) -->
-    <section id="gallery">
-        <div class="section-header">
-            <h2>Visual Gallery</h2>
-            <div class="line"></div>
-        </div>
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="cert">Certificates</button>
-            <button class="filter-btn" data-filter="shield">Shields</button>
-            <button class="filter-btn" data-filter="intern">Internship</button>
-        </div>
-        
-        <div class="gallery-grid">
-            <!-- Replace src with your actual image paths -->
-            
-            <!-- Item 1 -->
-            <div class="gallery-item" data-category="cert">
-                <img src="images/cert-1st.jpg" alt="Certificate 1st Place" onerror="this.style.display='none'">
-                <div class="overlay">
-                    <h3>1st Position Cert</h3>
-                    <p>Click to expand</p>
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="icon">🥇</div>
+                    <h3>1st Position</h3>
+                    <p>7th Semester</p>
                 </div>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="gallery-item" data-category="cert">
-                <img src="images/cert-3rd.jpg" alt="Certificate 3rd Place" onerror="this.style.display='none'">
-                <div class="overlay">
-                    <h3>3rd Position Cert</h3>
-                    <p>Click to expand</p>
+                <div class="achievement-card">
+                    <div class="icon">🥉</div>
+                    <h3>3rd Position</h3>
+                    <p>5th Semester</p>
                 </div>
-            </div>
-
-            <!-- Item 3 -->
-            <div class="gallery-item" data-category="shield">
-                <img src="images/shield-silver.jpg" alt="Silver Medal" onerror="this.style.display='none'">
-                <div class="overlay">
-                    <h3>Silver Medal</h3>
+                <div class="achievement-card">
+                    <div class="icon">🥈</div>
+                    <h3>Silver Medalist</h3>
                     <p>School Level</p>
                 </div>
+                <div class="achievement-card">
+                    <div class="icon">🏅</div>
+                    <h3>Vice President</h3>
+                    <p>University Society</p>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Item 4 -->
-            <div class="gallery-item" data-category="intern">
-                <img src="images/internship-letter.jpg" alt="Banking Internship" onerror="this.style.display='none'">
-                <div class="overlay">
-                    <h3>Banking Internship</h3>
-                    <p>Offer Letter</p>
-                </div>
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/certificate1.jpg" alt="Certificate" onclick="openModal(this)" onerror="this.style.opacity='0.3'">
+                <img src="images/certificate2.jpg" alt="Certificate" onclick="openModal(this)" onerror="this.style.opacity='0.3'">
+                <img src="images/gallery1.jpg" alt="Event" onclick="openModal(this)" onerror="this.style.opacity='0.3'">
+                <img src="images/gallery2.jpg" alt="Event" onclick="openModal(this)" onerror="this.style.opacity='0.3'">
+                <img src="images/gallery3.jpg" alt="Event" onclick="openModal(this)" onerror="this.style.opacity='0.3'">
+                <img src="images/gallery4.jpg" alt="Event" onclick="openModal(this)" onerror="this.style.opacity='0.3'">
             </div>
-            
-            <!-- Item 5 -->
-            <div class="gallery-item" data-category="cert">
-                <img src="images/vp-certificate.jpg" alt="VP Certificate" onerror="this.style.display='none'">
-                <div class="overlay">
-                    <h3>VP Certificate</h3>
-                    <p>Event Organizing</p>
-                </div>
-            </div>
-            
-             <!-- Item 6 -->
-             <div class="gallery-item" data-category="intern">
-                <img src="images/internship-cert.jpg" alt="Internship Completion" onerror="this.style.display='none'">
-                <div class="overlay">
-                    <h3>Completion Cert</h3>
-                    <p>Banking Sector</p>
-                </div>
-            </div>
-
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-container">
-            <h2>Get In Touch</h2>
-            <p>I am open to Internships and Research opportunities in AI/Data Science.</p>
-            <a href="mailto:asia.parveen@email.com" class="btn btn-primary">Say Hello</a>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>asia.parveen@email.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+92 300 1234567</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Lightbox Modal (Hidden by default) -->
-    <div id="lightbox" class="lightbox">
-        <span class="close-lightbox">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div id="caption"></div>
-    </div>
-
+    <!-- Footer -->
     <footer>
-        <p>Designed by Asia Parveen &copy; 2024</p>
+        <p>&copy; 2024 Asia Parveen. All Rights Reserved.</p>
     </footer>
+
+    <!-- Modal for Gallery -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
 
     <script src="script.js"></script>
 </body>
